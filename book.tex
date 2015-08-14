@@ -5,7 +5,7 @@
 \usepackage{algorithmic}
 \usepackage{algorithm}
 \newtheorem{theorem}{Theorem}
-\DeclareMathOperator{\diff}{diff}
+\DeclareMathOperator{\randomize}{randomize}
 \addtolength{\parskip}{3mm}
 \title{\Huge\sc True Facts}
 \author{Al Caveman}
@@ -40,7 +40,7 @@ Freenode/\#gentoo-chat-exile, 2015
 
 \begin{quote}
 ``\textbf{Al-Caveman:} DistantStar, u?
-\textbf{DistantStar:} okay. 
+\textbf{DistantStar:} okay.
 \textbf{Al-Caveman:} perfect.'' --- Freenode/\#gentoo-chat-exile, 2015
 \end{quote}
 
@@ -48,69 +48,83 @@ Freenode/\#gentoo-chat-exile, 2015
 
 \chapter{History}
 You really must read this chapter. You can't just jump around to other sections
-while expecting that you know what's goin on. Okay maybe you can, but if you
-jump around then you are effectively most likely performing a less inefficient
+while expecting that you know what's going on. Okay maybe you can, but if you
+jump around then you are effectively most likely performing a less efficient
 use of your time than if you heed my advise.
 
 \section{The Past}
-Some say that the whole thing started by something that caused a big
-explosion that resulted in lots of things some of which is making you exist.
-
-Let's fast-forward and start from the point in time when monkeys started to
-exist. Monkeys have been fucking each other for some time, and by doing so
-they make more monkeys. Not all monkeys are alike.  Some monkeys live long
-enough to fuck other monkeys, and some don't.
-
-Turns out that the nature cares about only one thing: how well you survive.
-Simply, the reason why things look like the way they are now, is because
-this is the configuration that managed to keep existing.
-
-There were some fascinating configurations, like the saber-toothed cat. But as
-such wasn't able to survive and got extinct in a glimpse. The nature didn't
-(and doesn't) give a damn rat's ass about how sexy the saber-toothed cats were
-to the catesses of that era.
-
-\section{The Present}
-Currently, what we see is a continuation of evolution as you've seen in the
-previous section on \emph{The Past}. The evolution is made of two parts: 1)
-random mutations, and 2) natural-selection. This can be summarized into the
-following randomized algorithm\footnote{Srsly DuckDuckGo randomized algorithms
-if you don't know.}:
-
+There are multiple possible reasons why you exist, but the one that is easiest
+to explain by monkeys like you (which is not necessarily the true one) is one
+that tries to minimize the role of miracles/magic. Turns out that your fellow
+monkeys found one that they think it minimizes that, and they decided to call
+it ``\emph{evolution}'', and it works like this:
 \begin{algorithm}
 \caption{The algorithm that made you.}
+\label{alg:evolv}
 \begin{algorithmic}
     \FOR{1 ... $t$}
-    \IF{$x$ survives}
-        \STATE{Keep it alive, and let it fuck around..}
-    \ELSE
-        \STATE{Let it die; i.e. make it into other things (conservatio law}
-    \ENDIF
+        \STATE{$\randomize(U)$}
     \ENDFOR
 \end{algorithmic}
 \end{algorithm}
 
-\begin{itemize}
-    \item Randomly shuffles stuff (e.g. particles) around. This results in new
-    permutations of the stuff. One of the permutations that exist now is
-    \emph{you}. 
-    \item Test if the created permutations can live. If they can live then let
-    them live, and if they can't thive then let them not live. Easy peasy.
-\end{itemize}
+Where $t$ is the total number of clock ticks, $U$ is the set of all elements of
+the universe, and $\randomize$ is a function that randomly transforms elements
+in $U$ based on some distribution that I'll touch later. For any $\bf{x} \in
+U$, $\bf{x}$ is a vector whose components describe exactly the perfect state of
+element $x$.
 
-Basically, that is some kind of an algorithm that some smarty folks would like
-to call a \emph{randomized algorithm}. One question is, what would happen in
-the limit as time approaches infinity?
+The reason you exist is because Allah\footnote{This material is not
+religion-oriented. Feel free to put your favorite God there including
+\emph{none}.} decided to execute Algorithm \ref{alg:evolv} such that $t$ is a
+large enough number, and the distribution that the function $\randomize$
+adheres to is a special one that permits your kind to exist.
 
-But before you go on, I assume that you know what is a randomized algorithm. If
-you don't, then DuckDuckGo it and come back after educating yourself about it.
+No monkey (or group of monkeys) is known to fully know the distribution that
+$\randomize$ tries to maintain, but some have figured out a few consistent
+rules that this distribution seems to stick to, which the monkeys decided to
+call ``\emph{Laws of Physics}''.
 
+For example, imagine some particular state of the universe (i.e. a point in
+time where the vectors in $U$ have particular values) where there is an apple
+atop the surface of planet earth by a few meters. In this particular
+configuration, the function $\randomize$ will modify the values of elements of
+$U$ as the clock advances such that the apple and earth will achieve a shorter
+euclidean distance between them until they hit each other. Once they hit each
+other, then other consistent patterns happen that the monkeys have figured out.
+
+Hundreds of years ago, monkeys were thinking/conjecturing that
+this distribution is fully deterministic. I.e. the way $\randomize$ will
+transform the elements in $U$ in the future (i.e. next clock tick) is fully
+dependant on the current values in $U$ at the present time (i.e. current clock
+tick).
+
+Later on, some other monkeys (that stood on the shoulders of previous gorillas),
+suggested that there might be some intrinsic randomness inside the function
+$\randomize$ that we can never fully know. At that time, some other monkeys
+(still better than you) didn't like this idea and said things like ``\emph{God
+doesn't play dice}''.
+
+But before we answer whether the function $\randomize$ has an intrinsic
+randomness that no one can predict (i.e. beyond the information in $U$ of a
+previous time), we need to know what is randomness? Do you know any algorithm
+that perfectly tells you if a number sequence is random?  \footnote{A monkey
+named \textbf{\_anomaly\_} in Freenode's \#gentoo-chat-exile claimed
+``\emph{yes}'', but then he retreated as he failed to find an algorithm that
+does that. He then claimed that he is not a mathematician. But somehow he dares
+to make claims about mathematics.}.
+
+\section{The Present}
+The specific configuration of elements in $U$ at some point in time between 1
+and $t$ as configured by Algorithm \ref{alg:evolv}. I am pretty sure it's not 1,
+and I feel (at the time of writing this) that it's not $t$ either. I can
+confirm now that it wasn't $t$ back then.
 
 \section{The Future}
-asfd
-
-
-
+The specific configuration of elements in $U$ as configured by Algorithm
+\ref{alg:evolv} when the clock tick is a number that is greater than the number
+of the clock tick of some reference point that you consider the
+``\emph{present}''. Many monkeys call this the ``\emph{future}''.
 
 \chapter{Good and Bad}
 
