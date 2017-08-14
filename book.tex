@@ -159,10 +159,9 @@ poison-free, and I think I can do better.  Watch.
 \section{Definition}
 So $\mathcal{P}$ is the set of persons. $i \in \mathcal{P}$ is person whom we
 wish to measure its dignity.  Also, for any persons $j,n \in \mathcal{P}$, say
-that $\texttt{loss}(i,n,j)$ is a real number quantifying what person $j$ thinks
-that person $i$ lost,
-which profited person $n$. Then the dignity of person $i$ in the eyes of person
-$j$ is $\texttt{dignity}(i,j)$:
+that $\texttt{loss}(i,n,j) \in [0, +\infty[$ is a real number quantifying what
+person $j$ thinks that person $i$ lost, which profited person $n$. Then the
+dignity of person $i$ in the eyes of person $j$ is $\texttt{dignity}(i,j)$:
 \[
 \texttt{dignity}(i,j) = 
 \sum_{n \in \mathcal{P}}
@@ -175,7 +174,6 @@ $j$ is $\texttt{dignity}(i,j)$:
 \end{split}
 \right]
 \]
-
 
 \section{How to Maximize Dignity?}
 If budget is infinite, you just seek to maximize this quantity by making
