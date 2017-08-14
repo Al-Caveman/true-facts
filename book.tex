@@ -1,4 +1,5 @@
 \documentclass{report}
+\usepackage{url}
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{amsmath}
@@ -23,7 +24,15 @@
 \AddToShipoutPicture*{\BackgroundPic}
 \begin{titlepage}
 \centering
-\color{white}{{\Huge\sc True Facts}\\\vspace{1cm}\Large Al Caveman\\\vspace{0.5cm}2015}
+\color{white}{
+{\Huge\sc True Facts}\\
+\vspace{1cm}
+{Written by}\\
+\vspace{.5cm}
+{\Large Al Caveman}\\
+\vspace{.5cm}
+\today
+}
 \end{titlepage}
 
 \chapter*{Preface}
@@ -43,6 +52,11 @@ Freenode/\#gentoo-chat-exile, 2015
 \textbf{DistantStar:} okay.
 \textbf{Al-Caveman:} perfect.'' --- Freenode/\#gentoo-chat-exile, 2015
 \end{quote}
+
+\textbf{Note:} I dislike DistantStar as of the $14^{th}$ of July, 2017. I don't
+know why I was even talking to this sucker. But it's a mild feeling. He is not
+important enough to warrant any stronger feelings against him.  However, I
+still like RobbieAB*.
 
 \tableofcontents
 
@@ -129,5 +143,61 @@ of the clock tick of some reference point that you consider the
     \item What does it mean for something to be true?
     \item What does it mean for something to be good?
 \end{itemize}
+
+\chapter{Dignity}
+All feelings are objectively quantifiable. It's all materialistic.
+Peeps who can't measure feelings, thoughts, manners, etc claim that these are
+not measurable, which they think is a more convenient response than having
+admit that they are just pussies. I think even some famous dudes like Immanuel
+Kant\footnote{\url{https://en.wikipedia.org/wiki/Immanuel_Kant}} and Karl
+Marx\footnote{\url{https://en.wikipedia.org/wiki/Karl_Marx}} were pussies, too.
+This is due to the fact that they [used to] drink
+poison\footnote{\url{https://en.wikipedia.org/wiki/Alcohol}} which probably
+limits their brain's cognitive capacity. I, on the other hand, I think am
+poison-free, and I think I can do better.  Watch.
+
+\section{Definition}
+So $\mathcal{P}$ is the set of peeps. $i \in \mathcal{P}$ is person whom we
+wish to measure its dignity, from the perspective of the other peeps in subset
+$S \subseteq \mathcal{P} \setminus \{i\}$.
+
+Also, for any peeps pair $(n,m) \in \mathcal{S}^2$, say that
+$\texttt{loss}(i,n)$ is a real number quantifying loss person $i$ endured,
+which profited person $n$.
+
+Then the dignity of person $i$ in community of peeps $\mathcal{S}$ is
+$d(i,\mathcal{S})$:
+
+$$
+d(i,\mathcal{S}) = 
+\sum_{n \in \mathcal{S}}
+\sum_{m \in \mathcal{S}}
+\left[
+\begin{split}
+&\Pr(\text{$m$ agrees $i$ knows he will never profit back})\\
+&\Pr(\text{$m$ agrees $i$ knows he benefited $n$})\\
+&\Pr(\text{$m$ agrees $i$ benefited $m$})\\
+&\texttt{loss}(i,n)\\
+\end{split}
+\right]
+$$
+
+\section{Why All the Fuss?}
+Why is this interesting? Now you may define subset $\mathcal{S}$ as you think
+is interesting for your game-theoretic applications. Perhaps put peeps inside
+$\mathcal{S}$ that you think, game theoretically, have goals aligned with each
+other? Or even use this the other way around to to cluster people by their
+game-theoretic needs to discover potential friends.
+
+Last but not least: it helps you more optimally boost your ``dignity'' against a
+target community\footnote{Please, if you are a politician, or an advertiser,
+and need my help to engineer your target audience to love ya, please drop me a
+mail at \emph{toraboracaveman@gmail.com} please, or ask for ``caveman'' in
+freenode's \#gentoo-chat-exile please, and peeps there will tell you which
+among them is me. Money-back guarantee, VAT-exempt. Please don't judge me by my cover, for
+ur own good. You really need me.}. In other words, this can help you create
+optimal advertisements campaigns! Politicians may really love these principles.
+
+
 
 \end{document}
