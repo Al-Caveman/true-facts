@@ -146,45 +146,64 @@ of the clock tick of some reference point that you consider the
 
 \chapter{Dignity}
 All feelings are objectively quantifiable. It's all materialistic.
-Peeps who can't measure feelings, thoughts, manners, etc claim that these are
-not measurable, which they think is a more convenient response than having
+People who can't measure feelings, thoughts, manners, etc claim that these are
+not measurable, which they think is a more convenient response than having them
 admit that they are just pussies. I think even some famous dudes like Immanuel
 Kant\footnote{\url{https://en.wikipedia.org/wiki/Immanuel_Kant}} and Karl
 Marx\footnote{\url{https://en.wikipedia.org/wiki/Karl_Marx}} were pussies, too.
-This is due to the fact that they [used to] drink
+I think that this is due to the fact that they [used to] drink
 poison\footnote{\url{https://en.wikipedia.org/wiki/Alcohol}} which probably
 limits their brain's cognitive capacity. I, on the other hand, I think am
 poison-free, and I think I can do better.  Watch.
 
 \section{Definition}
-So $\mathcal{P}$ is the set of peeps. $i \in \mathcal{P}$ is person whom we
-wish to measure its dignity, from the perspective of the other peeps in subset
-$S \subseteq \mathcal{P} \setminus \{i\}$.
-
-Also, for any peeps pair $(n,m) \in \mathcal{S}^2$, say that
-$\texttt{loss}(i,n)$ is a real number quantifying loss person $i$ endured,
-which profited person $n$.
-
-Then the dignity of person $i$ in community of peeps $\mathcal{S}$ is
-$d(i,\mathcal{S})$:
-
-$$
-d(i,\mathcal{S}) = 
-\sum_{n \in \mathcal{S}}
-\sum_{m \in \mathcal{S}}
+So $\mathcal{P}$ is the set of persons. $i \in \mathcal{P}$ is person whom we
+wish to measure its dignity.  Also, for any persons $j,n \in \mathcal{P}$, say
+that $\texttt{loss}(i,n,j)$ is a real number quantifying what person $j$ thinks
+that person $i$ lost,
+which profited person $n$. Then the dignity of person $i$ in the eyes of person
+$j$ is $\texttt{dignity}(i,j)$:
+\[
+\texttt{dignity}(i,j) = 
+\sum_{n \in \mathcal{P}}
 \left[
 \begin{split}
-&\Pr(\text{$m$ agrees $i$ knows he will never profit back})\\
-&\Pr(\text{$m$ agrees $i$ knows he benefited $n$})\\
-&\Pr(\text{$m$ agrees $i$ benefited $m$})\\
-&\texttt{loss}(i,n)\\
+&\texttt{loss}(i,n,j)\\
+&\Pr(\text{$j$ agrees benefiting $n$ by $\texttt{loss}(i,n,j)$ is good})\\
+&\Pr(\text{$j$ agrees $i$ knows he benefited $n$})\\
+&\Pr(\text{$j$ agrees $i$ knows he will never profit by benefiting $n$})\\
 \end{split}
 \right]
-$$
+\]
+
+
+\section{How to Maximize Dignity?}
+If budget is infinite, you just seek to maximize this quantity by making
+everyone maximally think that you are dignified:
+\[
+\sum_{j \in \mathcal{P}}
+\mathbb{E}\big[
+    \text{profit from $j$} 
+    \big|
+    \texttt{dignity}(i,j)
+\big]
+\]
+
+But, in practice, you are constrained by your budget (e.g. total money,
+time, etc), which limits the value of $\texttt{loss}(i,n,j)$, as well as your
+capacity in persuading people that you are being selfless (i.e. maximizing
+probabilities above). Meaning, you need to intelligently distribute the budget
+to maximize that. 
+
+\textbf{Note:} if you are actually planning to do what this section says with
+the objective of maximizing your profit, then, by definition, you are also
+planning to become a liar (i.e. fooling people that you're selfless, while
+actually seeking profits).
 
 \section{Why All the Fuss?}
-Why is this interesting? Now you may define subset $\mathcal{S}$ as you think
-is interesting for your game-theoretic applications. Perhaps put peeps inside
+Why is this interesting? Now you may define subset $\mathcal{S} \subseteq
+\mathcal{P}$ as you think
+is interesting for your game-theoretic applications. Perhaps put persons inside
 $\mathcal{S}$ that you think, game theoretically, have goals aligned with each
 other? Or even use this the other way around to to cluster people by their
 game-theoretic needs to discover potential friends.
@@ -193,11 +212,19 @@ Last but not least: it helps you more optimally boost your ``dignity'' against a
 target community\footnote{Please, if you are a politician, or an advertiser,
 and need my help to engineer your target audience to love ya, please drop me a
 mail at \emph{toraboracaveman@gmail.com} please, or ask for ``caveman'' in
-freenode's \#gentoo-chat-exile please, and peeps there will tell you which
+freenode's \#gentoo-chat-exile please, and persons there will tell you which
 among them is me. Money-back guarantee, VAT-exempt. Please don't judge me by my cover, for
 ur own good. You really need me.}. In other words, this can help you create
 optimal advertisements campaigns! Politicians may really love these principles.
 
+If you realize, Elon Musk actually is maximizing his dignity by claiming that
+he may never profit back from Tesla, SpaceX, and other projects.  He is
+actually doing a very good job here. This explains his popularity.
 
+Another example is Alex Jones, but he does a worse job as his audience of
+idiots is smaller than those of Musk's, and sells cheaper stuff like
+prineal-area wipes\footnote{\url{https://www.youtube.com/watch?v=WyGq6cjcc3Q}}.
+But Tesla loses more money too, so could it be that Alex Jones is actually
+doing a better job at the moment?
 
 \end{document}
