@@ -144,7 +144,7 @@ of the clock tick of some reference point that you consider the
     \item What does it mean for something to be good?
 \end{itemize}
 
-\chapter{Dignity}
+\chapter{Goodness}
 All feelings are objectively quantifiable. It's all materialistic.
 People who can't measure feelings, thoughts, manners, etc claim that these are
 not measurable, which they think is a more convenient response than having them
@@ -157,26 +157,44 @@ limits their brain's cognitive capacity. I, on the other hand, I think am
 poison-free, and I think I can do better.  Watch.
 
 \section{Definition}
-So $\mathcal{P}$ is the set of persons. $i \in \mathcal{P}$ is person whom we
-wish to measure its dignity.  Also, for any persons $j,n \in \mathcal{P}$, say
-that $\texttt{loss}(i,n,j) \in [0, +\infty[$ is a real number quantifying what
-person $j$ thinks that person $i$ lost, which profited person $n$. Then the
-dignity of person $i$ in the eyes of person $j$ is $\texttt{dignity}(i,j)$:
-\[
-\texttt{dignity}(i,j) = 
+So $\mathcal{P}$ is the set of persons. $i \in \mathcal{P}$ is a person whom we
+wish to measure hos goodness.  Also, for any persons $j,n \in \mathcal{P}$, say
+that $\texttt{value}(i,n,j)$ is a real number quantifying what person $j$
+thinks that person $i$ lost, which profited person $n$. Then the goodness of
+person $i$ in the eyes of person $j$ is $\texttt{goodness}(i,j)$:
+\begin{equation}
+\label{eq:goodness}
+\texttt{goodness}(i,j) = 
 \sum_{n \in \mathcal{P}}
 \left[
 \begin{split}
-&\texttt{loss}(i,n,j)\\
-&\Pr(\text{$j$ agrees $i$ knows $i$ lost \texttt{loss}(i,n,j)})\\
-&\Pr(\text{$j$ agrees $i$ knows $i$ benefited $n$})\\
-&\Pr(\text{$j$ agrees benefiting $n$ by $\texttt{loss}(i,n,j)$ is good})\\
-&\Pr(\text{$j$ agrees $i$ knows he will never profit by benefiting $n$})\\
+&\texttt{value}(i,n,j)\\
+&\Pr(\text{$j$ agrees $i$ gave \texttt{value}(i,n,j) to $n$})\\
+&\Pr(\text{$j$ agrees benefiting $n$ was good})\\
 \end{split}
 \right]
-\]
+\end{equation}
 
-\section{How to Maximize Dignity?}
+\section{Why Should this Work?}
+Dignity, and other positive things are only special cases of the ``goodness''
+measure above. You only gain goodness in someone's prospective when you benefit
+those whom they think benefiting is a good thing to do. If
+$\texttt{value}(i,n,j)$ is negative, then it means that $i$ is taking value
+from $n$. If person $j$ thought it was good to benefit $n$ (as opposed to
+taking value from him), then person $i$ will \emph{lose} ``goodness'' points
+in $j$'s eyes.
+
+Also note that, this means that in total, $i$ must be perceived to be losing
+value more than gaining. This is the only way the summation in
+(\ref{eq:goodness}) will be positive. In other words, (\ref{eq:goodness})
+necessarily implies selflessness to be perceived.
+
+People may call some actions that increase ``goodness'' dignity, kindness,
+generosity, cuteness, etc. But I don't see a need for this sub-classification.
+I think it suffices to say ``goodness''.
+
+
+\section{How to Maximize Goodness?}
 If budget is infinite, you just seek to maximize this quantity by making
 everyone maximally think that you are dignified:
 \[
@@ -184,12 +202,12 @@ everyone maximally think that you are dignified:
 \mathbb{E}\big[
     \text{profit from $j$} 
     \big|
-    \texttt{dignity}(i,j)
+    \texttt{goodness}(i,j)
 \big]
 \]
 
 But, in practice, you are constrained by your budget (e.g. total money,
-time, etc), which limits the value of $\texttt{loss}(i,n,j)$, as well as your
+time, etc), which limits the value of $\texttt{value}(i,n,j)$, as well as your
 capacity in persuading people that you are being selfless (i.e. maximizing
 probabilities above). Meaning, you need to intelligently distribute the budget
 to maximize that. 
@@ -207,7 +225,7 @@ $\mathcal{S}$ that you think, game theoretically, have goals aligned with each
 other? Or even use this the other way around to to cluster people by their
 game-theoretic needs to discover potential friends.
 
-Last but not least: it helps you more optimally boost your ``dignity'' against a
+Last but not least: it helps you more optimally boost your ``goodness'' against a
 target community\footnote{Please, if you are a politician, or an advertiser,
 and need my help to engineer your target audience to love ya, please drop me a
 mail at \emph{toraboracaveman@gmail.com} please, or ask for ``caveman'' in
@@ -216,7 +234,7 @@ among them is me. Money-back guarantee, VAT-exempt. Please don't judge me by my 
 ur own good. You really need me.}. In other words, this can help you create
 optimal advertisements campaigns! Politicians may really love these principles.
 
-If you realize, Elon Musk actually is maximizing his dignity by claiming that
+If you realize, Elon Musk actually is maximizing his goodness by claiming that
 he may never profit back from Tesla, SpaceX, and other projects.  He is
 actually doing a very good job here. This explains his popularity.
 
